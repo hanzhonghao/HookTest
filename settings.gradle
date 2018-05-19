@@ -1,0 +1,1 @@
+include ':app', ':hooktest2', ':testdemo1', ':externalencry', ':externalencry', ':encrycapability', ':testdemo2'

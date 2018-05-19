@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:baselineAligned="true"
+              android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/SelFileText"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/shurukuang" >
+    </EditText>
+
+    <Button
+        android:id="@+id/ChooseFileBtn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="选择文件" >
+    </Button>
+
+    <Button
+        android:id="@+id/SelFileBtn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="进行加密操作" >
+    </Button>
+
+</LinearLayout>

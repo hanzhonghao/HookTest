@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/delAlgSelRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/decAlgSelR1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:checked="true"
+            android:text="@string/alg1">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/decAlgSelR2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/alg2">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/decAlgSelR3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/alg3">
+        </RadioButton>
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/decAlgKey"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/keyStr1">
+        </EditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/decCTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="@string/outputStr2">
+    </TextView>
+
+    <EditText
+        android:id="@+id/delOutText"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/blank">
+    </EditText>
+
+    <Button
+        android:id="@+id/decAlgSelBtn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dip"
+        android:text="@string/decryptStr">
+    </Button>
+
+</LinearLayout>

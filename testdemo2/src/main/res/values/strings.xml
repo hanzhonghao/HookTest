@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">测试用例2</string>
+    <string name="one_word">这是一个测试用例</string>
+    <string name="text1">这里是模拟创建的数据,用于写入在内部存储中创建的文件.仅用于模拟可以，点击自行修改.
+                         此处的数据仅仅用于演示。此测试用例的功能是模拟手机中的应用写入数据存进文件以及读取文件的数据过程,
+                         通过底层拦截在写入操作之前实现加密然后存储,在读取操作之后实现解密,然后进行读取。</string>
+    <string name="text2">asdfghjkl</string>
+</resources>

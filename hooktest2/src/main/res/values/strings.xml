@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">透明加密</string>
+    <string name="shurukuang">此处将显示要加密的文件名</string>
+    <string name="alg1">DES</string>
+    <string name="alg2">DESede</string>
+    <string name="alg3">AES</string>
+    <string name="keyStr">输入密钥</string>
+    <string name="outputStr1">输出文件名设定</string>
+    <string name="blank">“</string>
+    <string name="encryptStr">文件加密</string>
+    <string name="outputStr2">加密后的输出</string>
+    <string name="decryptStr">文件解密</string>
+    <string name="one_word">         已开启透明加密功能！   </string>
+    <string name="one_word2">          （此功能只针对内部存储进行透明加密）</string>
+    <string name="visibleText">底层监控手机文件读写的日志信息：</string>
+</resources>

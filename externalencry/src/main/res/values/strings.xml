@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">透明加密</string>
+    <string name="encryptStr">文件加密</string>
+    <string name="decryptStr">文件解密</string>
+    <string name="shurukuang">此处将显示文件名</string>
+
+    <string name="hello">请选择功能</string>
+    <string name="signStr">数字签名</string>
+    <string name="macStr">报文鉴别</string>
+    <string name="selectFileStr">选择文件</string>
+    <string name="blank"></string>
+    <string name="macSetStr">生成鉴别码</string>
+    <string name="macCheck">鉴别文件</string>
+    <string name="signCheck">签名验证</string>
+    <string name="alg1">DES</string>
+    <string name="alg2">RC4</string>
+    <string name="alg3">AES</string>
+    <string name="outputStr1">加密后输出文件名设定：</string>
+    <string name="outputStr2">解密后输出文件名设定：</string>
+    <string name="keyCreatStr">生成密钥</string>
+    <string name="srcFileStr">源文件</string>
+    <string name="tarFileStr">目标文件</string>
+    <string name="PUKFileStr">公钥文件</string>
+    <string name="PRKFileStr">私钥文件</string>
+    <string name="signFileStr">签名文件</string>
+    <string name="sizeSelStr">大小选择</string>
+    <string name="smallSize">512</string>
+    <string name="midSize">768</string>
+    <string name="bigSize">1024</string>
+    <string name="macFile">鉴别码文件</string>
+    <string name="viewStr">查看文件</string>
+    <string name="keyStr">请输入加密密钥</string>
+    <string name="keyStr1">请输入解密密钥</string>
+    <string name="writeStr">编辑文件</string>
+    <string name="saveStr">保存</string>
+    <string name="delStr">删除文件</string>
+    <string name="macAlg1">MD5</string>
+    <string name="macAlg2">SHA1</string>
+</resources>

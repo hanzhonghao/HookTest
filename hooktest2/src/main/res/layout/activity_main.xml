@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:baselineAligned="true"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- AppBar -->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleGravity="center_horizontal"
+                app:expandedTitleMarginBottom="100dp"
+                app:expandedTitleTextAppearance="@style/expandedTitle"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/me_bg"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7">
+
+                    <TextView
+                        android:id="@+id/tv_instru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/one_word"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_instru2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_instru"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/one_word2"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center"
+                >
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="8dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/SelFileText"
+                                android:layout_width="220dip"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:hint="@string/shurukuang"
+                                android:paddingTop="5dp"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2dp"
+                            android:src="@mipmap/file"/>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/ChooseFileBtn"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_line_while"
+                    android:text="选择文件">
+                </Button>
+
+                <Button
+                    android:id="@+id/EncFileBtn"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_line_while"
+                    android:text="进行加密操作">
+                </Button>
+
+                <Button
+                    android:id="@+id/DencFileBtn"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_line_while"
+                    android:text="进行解密操作">
+                </Button>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+       <!-- <ImageButton
+            android:id="@+id/ivb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:background="@mipmap/lock"
+            />-->
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
